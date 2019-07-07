@@ -1,0 +1,23 @@
+﻿#tabsList {
+    margin-left: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabLink:hover {
+    background-color: #ddd;
+}
+
+.tabLink {
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+.tabLink.active {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #ccc;
+}

@@ -1,0 +1,14 @@
+﻿{
+	"contentApps": [{
+		"name": "Tabify",
+		"alias": "cultivTabify",
+		"icon": "icon-tab",
+    "view": "~/App_Plugins/Cultiv.Tabify/tabify.html"
+  }],
+  "javascript": [
+    "~/App_Plugins/Cultiv.Tabify/tabify.js"
+  ],
+  "css": [
+    "~/App_Plugins/Cultiv.Tabify/tabify.css"
+  ]
+}
