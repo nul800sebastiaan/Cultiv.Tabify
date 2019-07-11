@@ -62,3 +62,8 @@
 .umb-group-panel[style*=display][style*=block] .umb-group-panel__header { 
     display:none;
 }
+
+.umb-group-panel {
+    margin-bottom: 0;
+}
+
