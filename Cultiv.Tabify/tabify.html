@@ -1,1 +1,5 @@
-﻿<div ng-controller="Cultiv.Tabify as vm"></div>
+﻿<div ng-controller="Umbraco.Editors.Content.Apps.ContentController as vm">
+    <ct-tabbed-content ng-if="!vm.loading"
+                       content="vm.content">
+    </ct-tabbed-content>
+</div>
