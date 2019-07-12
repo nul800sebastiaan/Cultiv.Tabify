@@ -6,7 +6,10 @@
         function link($scope, $element, $attrs) {
 
             var appRootNode = $element[0];
-            $scope.currentTab = "Hero";
+            $scope.currentTab = "";
+            if ($scope.content.tabs[0]) {
+                $scope.currentTab = $scope.content.tabs[0].label;
+            }
 
             // Directive for cached property groups.
             var propertyGroupNodesDictionary = {};
