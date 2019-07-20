@@ -3,7 +3,7 @@
     overflow: hidden;
     margin: 0;
     position: fixed;
-    z-index: 15000;
+    z-index: 1;
     background: #f6f4f4;
     width: 100%;
 }
@@ -100,7 +100,7 @@
     background: #f6f4f4;
     height: 20px;
     position: fixed;
-    z-index: 15000;
+    z-index: 1;
     width: 100%;
 }
 
