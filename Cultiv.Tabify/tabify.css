@@ -2,6 +2,10 @@
 #tabsList {
     overflow: hidden;
     margin: 0;
+    position: fixed;
+    z-index: 1;
+    background: #f6f4f4;
+    width: 100%;
 }
 
 .tabLink {
@@ -12,7 +16,7 @@
     font-weight: 700;
     font-size: 15px;
     padding: 12px 20px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,1);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
     border-right: 2px solid #f6f4f4;
     transition: background-color 0.2s ease-in-out 0s;
@@ -77,6 +81,26 @@
     margin-left: 20px;
 }
 
+.tabLink p {
+    margin: 0;
+}
+
+/* Validation */
+
+.tabLink .icon {
+    display: none;
+}
+
+.show-validation .tabLink.hasError .icon {
+    display: inline;
+    position: absolute;
+    color: #d42054;
+}
+
+.show-validation .tabLink.hasError span {
+    margin-left: 20px;
+}
+
 /* Hides the panel header so that the title is not repeated */
 .umb-group-panel#tab-0 .umb-group-panel__header,
 .umb-group-panel[style*=display][style*=block] .umb-group-panel__header {
@@ -86,3 +110,16 @@
 .umb-group-panel {
     margin-bottom: 0;
 }
+.tabbed-panel {
+    padding-top: 60px;
+}
+
+.fake-top-background {
+    margin-top: -20px;
+    background: #f6f4f4;
+    height: 20px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+

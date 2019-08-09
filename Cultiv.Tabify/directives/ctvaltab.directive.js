@@ -4,10 +4,8 @@
         restrict: "A",
         link: function (scope, element, attr, ctrs) {
 
-            console.log(scope);
-
             var valFormManager = ctrs[1];
-            console.log(scope);
+           
             var tabAlias = scope.group.alias;
             scope.tabHasError = false;
 
