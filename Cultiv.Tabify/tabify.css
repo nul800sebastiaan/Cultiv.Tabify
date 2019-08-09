@@ -65,6 +65,22 @@
     background-color: #f5c1bc;
 }
 
+/* Validation */
+
+.tabLink .icon {
+    display: none;
+}
+
+.show-validation .tabLink.hasError .icon {
+    display: inline;
+    position: absolute;
+    color: #d42054;
+}
+
+.show-validation .tabLink.hasError span {
+    margin-left: 20px;
+}
+
 .tabLink p {
     margin: 0;
 }

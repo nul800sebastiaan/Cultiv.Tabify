@@ -1,10 +1,11 @@
-﻿function valTab() {
+﻿function valTab(timeout) {
     return {
         require: ['^^form', '^^valFormManager'],
         restrict: "A",
         link: function (scope, element, attr, ctrs) {
 
             var valFormManager = ctrs[1];
+           
             var tabAlias = scope.group.alias;
             scope.tabHasError = false;
 
@@ -13,6 +14,7 @@
 
                 if (!args.form.$valid) {
 
+                       
                     var tabContent = element.closest(".umb-editor").find("[data-element='group-" + tabAlias + "']");
                     //check if the validation messages are contained inside of this tabs 
 
@@ -31,4 +33,4 @@
         }
     };
 }
-angular.module('umbraco.directives.validation').directive("ctValTab", valTab);
+angular.module('umbraco.directives.validation').directive("ctValTab", ['$timeout',valTab]);
