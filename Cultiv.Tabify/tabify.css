@@ -143,3 +143,9 @@
     width: 100%;
 }
 
+
+/* hide the "Content" dropdown (avoid confusion) */
+.dropdown-menu.umb-sub-views-nav-item__anchor_dropdown.ng-scope {
+    display:none;
+}
+
