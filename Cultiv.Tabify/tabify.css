@@ -145,7 +145,7 @@
 
 
 /* hide the "Content" dropdown (avoid confusion) */
-.dropdown-menu.umb-sub-views-nav-item__anchor_dropdown.ng-scope {
+.dropdown-menu.umb-sub-views-nav-item__anchor_dropdown {
     display:none;
 }
 
