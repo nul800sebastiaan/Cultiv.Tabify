@@ -3,7 +3,7 @@
     overflow: hidden;
     margin: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     background: #f6f4f4;
     width: 100%;
 }
@@ -139,13 +139,16 @@
     background: #f6f4f4;
     height: 20px;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
 }
-
 
 /* hide the "Content" dropdown (avoid confusion) */
 .dropdown-menu.umb-sub-views-nav-item__anchor_dropdown {
     display:none;
 }
 
+/* moves the Grid re-order bar down so it doesn't cover the tabs */
+#umb-grid > .umb-editor-sub-header[umb-sticky-bar] { 
+	top: 64px;
+}
